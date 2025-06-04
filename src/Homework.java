@@ -144,6 +144,14 @@ public class Homework {
 
     // 3.4 Словарь синонимов. Создайте Map<String, Set<String>> — ключ: слово, значение: набор синонимов.
     // Реализуйте метод addSynonym(String word, String synonym)
-
+    public static void addSynonym(Map<String, Set<String>> vocabulary, String word, String synonym) {
+        if (!vocabulary.containsKey(word)) {
+            Set<String> synonyms = new HashSet<>();
+            synonyms.add(synonym);
+            vocabulary.put(word, synonyms);
+        } else {
+            vocabulary.get(word).add(synonym);
+        }
+    }
 }
 
