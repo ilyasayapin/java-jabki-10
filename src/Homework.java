@@ -9,7 +9,7 @@ public class Homework {
         set.add("Один");
         set.add("Два");
         set.add("Три");
-        set.add("Четыре");
+        set.add("java");
         set.add("Пять");
         return set;
     }
@@ -21,10 +21,14 @@ public class Homework {
             if (str.equals("java")) {
                 chek = true;
             }
-            return chek;
         }
+        return chek;
+    }
 
-
+//    1.3 Удаление элемента. Удалите слово "python" из множества (если оно есть).
+    public static boolean RemoveFromSet(Set<String> set) {
+        boolean isRemoved = set.remove("python");
+        return isRemoved;
     }
 
 
