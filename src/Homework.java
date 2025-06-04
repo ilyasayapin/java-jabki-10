@@ -36,8 +36,7 @@ public class Homework {
         return isRemoved;
     }
 
-    // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и
-    // выведите количество уникальных слов.
+    // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и выведите количество уникальных слов.
     public static int countUnique(List<String> list) {
         Set<String> setFromList = new HashSet<String>(list);
         return setFromList.size();
@@ -47,8 +46,7 @@ public class Homework {
      * Map / HashMap
      */
 
-    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками.
-    // Выведите все пары ключ-значение.
+    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
     public static Map<String, Integer> newMap() {
         Map<String, Integer> map = new HashMap<>();
         map.put("Небесная Алгебра", 5);
@@ -87,9 +85,7 @@ public class Homework {
      * Medium
      */
 
-    // 3.1 Анаграммы. Напишите метод areAnagrams(String a, String b),
-    // который возвращает true, если строки состоят из одинаковых символов
-    // (используйте Map<Character, Integer>).
+    // 3.1 Анаграммы. Напишите метод areAnagrams(String a, String b), который возвращает true, если строки состоят из одинаковых символов (используйте Map<Character, Integer>).
     public static boolean areAnagrams(String a, String b) {
         if (a.length() != b.length()) {
             return false;
@@ -115,8 +111,7 @@ public class Homework {
         return map.isEmpty();
     }
 
-    // 3.2 Поиск дубликатов с помощью Set. Напишите метод
-    // hasDuplicates(List<Integer> list) — возвращает true, если в списке есть дубликаты
+    // 3.2 Поиск дубликатов с помощью Set. Напишите метод hasDuplicates(List<Integer> list) — возвращает true, если в списке есть дубликаты
     public static boolean hasDuplicates(List<Integer> list) {
         Set<Integer> set = new HashSet<>();
         for (Integer a : list) {
@@ -128,8 +123,7 @@ public class Homework {
         return false;
     }
 
-    // 3.3 Рейтинг студентов. Дан Map<String, Integer> (имя студента → балл).
-    // Верните имя студента с максимальным баллом
+    // 3.3 Рейтинг студентов. Дан Map<String, Integer> (имя студента → балл). Верните имя студента с максимальным баллом
     public static String getStudent(Map<String, Integer> students) {
         String topStudent = null;
         Integer maxMark = 0;
@@ -142,8 +136,7 @@ public class Homework {
         return topStudent;
     }
 
-    // 3.4 Словарь синонимов. Создайте Map<String, Set<String>> — ключ: слово, значение: набор синонимов.
-    // Реализуйте метод addSynonym(String word, String synonym)
+    // 3.4 Словарь синонимов. Создайте Map<String, Set<String>> — ключ: слово, значение: набор синонимов. Реализуйте метод addSynonym(String word, String synonym)
     public static void addSynonym(Map<String, Set<String>> vocabulary, String word, String synonym) {
         if (!vocabulary.containsKey(word)) {
             Set<String> synonyms = new HashSet<>();

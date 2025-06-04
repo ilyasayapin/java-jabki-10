@@ -60,6 +60,14 @@ public class Main {
         System.out.println("Самый умный студент: " + Homework.getStudent(students));
 
         // 3.4 Словарь синонимов.
+        Map<String, Set<String>> vocabulary = new HashMap<>();
+        Homework.addSynonym(vocabulary, "красный", "алый");
+        System.out.println(vocabulary);
+        Homework.addSynonym(vocabulary, "красный", "бардо");
+        System.out.println(vocabulary);
+        Homework.addSynonym(vocabulary, "зеленый", "изумрудный");
+        System.out.println(vocabulary);
+
 
 
 
