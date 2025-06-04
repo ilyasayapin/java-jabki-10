@@ -44,6 +44,19 @@ public class Main {
         System.out.println("Эти строки анаграммы? - " + Homework.areAnagrams(a, b));
 
         // 3.2 Поиск дубликатов с помощью Set.
+        List<Integer> list = new ArrayList<Integer>();
+        list.add(1);
+        list.add(2);
+        list.add(3);
+        list.add(4);
+        System.out.println(list);
+        System.out.println("Есть ли дубпликаты в этом списке? - " + Homework.hasDuplicates(list));
+
+        // 3.3 Рейтинг студентов.
+
+
+
+
 
 
     }

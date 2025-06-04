@@ -117,6 +117,20 @@ public class Homework {
 
     // 3.2 Поиск дубликатов с помощью Set. Напишите метод
     // hasDuplicates(List<Integer> list) — возвращает true, если в списке есть дубликаты
+    public static boolean hasDuplicates(List<Integer> list) {
+        Set<Integer> set = new HashSet<>();
+        for (Integer a : list) {
+            if (set.contains(a)) {
+                return true;
+            }
+            set.add(a);
+        }
+        return false;
+    }
+
+    // 3.3 Рейтинг студентов. Дан Map<String, Integer> (имя студента → балл).
+    // Верните имя студента с максимальным баллом
 
 
 }
+
