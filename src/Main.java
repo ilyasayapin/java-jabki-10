@@ -32,6 +32,8 @@ public class Main {
         // 2.3. Изменение значения. Измените значение по ключу "English" на 5.
         Homework.setEnglishMark(Homework.newMap());
 
+        // 2.4 Проверка наличия ключа. Проверьте, есть ли в мапе ключ "History".
+        System.out.println("В мапе есть ключ 'History?' - " + Homework.chekKeyHistory(Homework.newMap()));
 
     }
 }

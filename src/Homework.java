@@ -62,11 +62,17 @@ public class Homework {
         return map.get("Math");
     }
 
-    // 2.3. Изменение значения. Измените значение по ключу "English" на 5.
+    // 2.3 Изменение значения. Измените значение по ключу "English" на 5.
     public static void setEnglishMark(Map<String, Integer> map) {
         map.replace("English", 5);
         System.out.println(map);
     }
+
+    // 2.4 Проверка наличия ключа. Проверьте, есть ли в мапе ключ "History".
+    public static boolean chekKeyHistory(Map<String, Integer> map) {
+        return map.containsKey("History");
+    }
+
 
 
 }
