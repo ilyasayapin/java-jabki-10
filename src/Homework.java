@@ -54,6 +54,7 @@ public class Homework {
         map.put("Магическое рукоделие", 2);
         map.put("Math", 5);
         map.put("English", 2);
+        map.put("Physics", 4);
         return map;
     }
 
@@ -71,6 +72,12 @@ public class Homework {
     // 2.4 Проверка наличия ключа. Проверьте, есть ли в мапе ключ "History".
     public static boolean chekKeyHistory(Map<String, Integer> map) {
         return map.containsKey("History");
+    }
+
+    // 2.5. Удаление ключа. Удалите ключ "Physics" из мапы.
+    public static void removeKeyPhysics(Map<String, Integer> map) {
+        map.remove("Physics");
+        System.out.println(map);
     }
 
 

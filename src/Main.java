@@ -35,5 +35,8 @@ public class Main {
         // 2.4 Проверка наличия ключа. Проверьте, есть ли в мапе ключ "History".
         System.out.println("В мапе есть ключ 'History?' - " + Homework.chekKeyHistory(Homework.newMap()));
 
+        // 2.5. Удаление ключа. Удалите ключ "Physics" из мапы.
+        Homework.removeKeyPhysics(Homework.newMap());
+
     }
 }
