@@ -49,7 +49,7 @@ public class Main {
         list.add(3);
         list.add(4);
         System.out.println(list);
-        System.out.println("Есть ли дубпликаты в этом списке? - " + Homework.hasDuplicates(list));
+        System.out.println("Есть ли дубликаты в этом списке? - " + Homework.hasDuplicates(list));
 
         // 3.3 Рейтинг студентов.
         Map<String, Integer> students = new HashMap<>();
