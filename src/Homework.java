@@ -35,7 +35,8 @@ public class Homework {
         return isRemoved;
     }
 
-    // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и выведите количество уникальных слов.
+    // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и
+    // выведите количество уникальных слов.
     public static int countUnique(List<String> list) {
         Set<String> setFromList = new HashSet<String>(list);
         return setFromList.size();
@@ -45,7 +46,8 @@ public class Homework {
      * Map / HashMap
      */
 
-    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
+    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками.
+    // Выведите все пары ключ-значение.
     public static Map<String, Integer> newMap() {
         Map<String, Integer> map = new HashMap<>();
         map.put("Небесная Алгебра", 5);
@@ -80,6 +82,13 @@ public class Homework {
         System.out.println(map);
     }
 
+    /*
+     * Medium
+     */
+
+    // 3.1 Анаграммы. Напишите метод areAnagrams(String a, String b),
+    // который возвращает true, если строки состоят из одинаковых символов
+    // (используйте Map<Character, Integer>).
 
 
 }
