@@ -1,4 +1,5 @@
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 
 public class Homework {
@@ -33,8 +34,9 @@ public class Homework {
     }
 
     // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и выведите количество уникальных слов.
-    public static int countUnique(Set<String> set) {
-        return set.size();
+    public static int countUnique(List<String> list) {
+        Set<String> setFromList = new HashSet<String>(list);
+        return setFromList.size();
     }
 
 }
