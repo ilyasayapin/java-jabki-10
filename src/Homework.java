@@ -16,6 +16,13 @@ public class Homework {
 
 //    1.2 Проверка на наличие элемента. Проверьте, содержится ли слово "java" в множестве.
     public static boolean chekWordJava(Set<String> set) {
+        boolean chek = false;
+        for (String str : set) {
+            if (str.equals("java")) {
+                chek = true;
+            }
+            return chek;
+        }
 
 
     }
