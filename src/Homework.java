@@ -52,6 +52,21 @@ public class Homework {
         map.put("Высшая Теология", 3);
         map.put("Молекулярная химия", 4);
         map.put("Магическое рукоделие", 2);
+        map.put("Math", 5);
+        map.put("English", 2);
         return map;
     }
+
+    // 2.2 Получение значения по ключу. Выведите значение по ключу "Math".
+    public static Integer getMathMark(Map<String, Integer> map) {
+        return map.get("Math");
+    }
+
+    // 2.3. Изменение значения. Измените значение по ключу "English" на 5.
+    public static void setEnglishMark(Map<String, Integer> map) {
+        map.replace("English", 5);
+        System.out.println(map);
+    }
+
+
 }

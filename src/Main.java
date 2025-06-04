@@ -4,16 +4,16 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-    // 1.1 Создание множества. Создайте HashSet<String>, добавьте 5 слов и выведите все элементы.
+        // 1.1 Создание множества. Создайте HashSet<String>, добавьте 5 слов и выведите все элементы.
         System.out.println(Homework.newSetString());
 
-    // 1.2 Проверка на наличие элемента. Проверьте, содержится ли слово "java" в множестве.
+        // 1.2 Проверка на наличие элемента. Проверьте, содержится ли слово "java" в множестве.
         System.out.println("Есть ли слово 'java' в множестве? - " + Homework.chekWordJava(Homework.newSetString()));
 
-    // 1.3 Удаление элемента. Удалите слово "python" из множества (если оно есть).
+        // 1.3 Удаление элемента. Удалите слово "python" из множества (если оно есть).
         System.out.println("Удалено ли слово 'python' из множества? - " + Homework.RemoveFromSet(Homework.newSetString()));
 
-    // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и выведите количество уникальных слов.
+        // 1.4 Подсчёт уникальных. Дан список строк с повторами. Добавьте их в HashSet и выведите количество уникальных слов.
         List<String> food = new ArrayList<String>();
         food.add("Арбуз");
         food.add("Арбуз");
@@ -23,9 +23,14 @@ public class Main {
         System.out.print(food);
         System.out.println(" Число уникальных слов: " + Homework.countUnique(food));
 
-    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
+        // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
         System.out.println(Homework.newMap());
 
+        // 2.2 Получение значения по ключу. Выведите значение по ключу "Math".
+        System.out.println("Оценка за Math: " + Homework.getMathMark(Homework.newMap()));
+
+        // 2.3. Изменение значения. Измените значение по ключу "English" на 5.
+        Homework.setEnglishMark(Homework.newMap());
 
 
     }
