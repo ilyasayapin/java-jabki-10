@@ -20,8 +20,13 @@ public class Main {
         food.add("Тыква");
         food.add("Абрикос");
         food.add("Абрикос");
-        System.out.println(food);
-        System.out.println("Число уникальных слов: " + Homework.countUnique(food));
+        System.out.print(food);
+        System.out.println(" Число уникальных слов: " + Homework.countUnique(food));
+
+    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
+        System.out.println(Homework.newMap());
+
+
 
     }
 }

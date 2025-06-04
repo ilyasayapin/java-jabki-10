@@ -1,8 +1,10 @@
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 public class Homework {
+
+    /*
+     * Set / HashSet
+     */
 
     // 1.1 Создание множества. Создайте HashSet<String>, добавьте 5 слов и выведите все элементы.
     public static Set<String> newSetString() {
@@ -39,4 +41,17 @@ public class Homework {
         return setFromList.size();
     }
 
+    /*
+     * Map / HashMap
+     */
+
+    // 2.1 Создание и вывод Map. Создайте HashMap<String, Integer> с названиями предметов и оценками. Выведите все пары ключ-значение.
+    public static Map<String, Integer> newMap() {
+        Map<String, Integer> map = new HashMap<>();
+        map.put("Небесная Алгебра", 5);
+        map.put("Высшая Теология", 3);
+        map.put("Молекулярная химия", 4);
+        map.put("Магическое рукоделие", 2);
+        return map;
+    }
 }
