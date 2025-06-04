@@ -38,5 +38,10 @@ public class Main {
         // 2.5. Удаление ключа. Удалите ключ "Physics" из мапы.
         Homework.removeKeyPhysics(Homework.newMap());
 
+        // 3.1 Анаграммы.
+        String a = "abc";
+        String b = "acb";
+        System.out.println("Эти строки анаграммы? - " + Homework.areAnagrams(a, b));
+
     }
 }
