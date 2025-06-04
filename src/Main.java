@@ -43,5 +43,8 @@ public class Main {
         String b = "acb";
         System.out.println("Эти строки анаграммы? - " + Homework.areAnagrams(a, b));
 
+        // 3.2 Поиск дубликатов с помощью Set.
+
+
     }
 }
