@@ -1,5 +1,7 @@
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
 
 public class Main {
     public static void main(String[] args) {
@@ -53,7 +55,14 @@ public class Main {
         System.out.println("Есть ли дубпликаты в этом списке? - " + Homework.hasDuplicates(list));
 
         // 3.3 Рейтинг студентов.
+        Map<String, Integer> students = new HashMap<>();
+        students.put("Иванов", 5);
+        students.put("Петров", 10);
+        students.put("Сидоров", 4);
+        System.out.println(students);
+        System.out.println("Самый умный студент: " + Homework.getStudent(students));
 
+        // 3.4 Словарь синонимов.
 
 
 

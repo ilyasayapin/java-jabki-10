@@ -130,7 +130,20 @@ public class Homework {
 
     // 3.3 Рейтинг студентов. Дан Map<String, Integer> (имя студента → балл).
     // Верните имя студента с максимальным баллом
+    public static String getStudent(Map<String, Integer> students) {
+        String topStudent = null;
+        Integer maxMark = 0;
+        for (Map.Entry<String, Integer> entry : students.entrySet()) {
+            if (entry.getValue() > maxMark) {
+                maxMark = entry.getValue();
+                topStudent = entry.getKey();
+            }
+        }
+        return topStudent;
+    }
 
+    // 3.4 Словарь синонимов. Создайте Map<String, Set<String>> — ключ: слово, значение: набор синонимов.
+    // Реализуйте метод addSynonym(String word, String synonym)
 
 }
 
