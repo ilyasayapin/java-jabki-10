@@ -114,4 +114,9 @@ public class Homework {
         }
         return map.isEmpty();
     }
+
+    // 3.2 Поиск дубликатов с помощью Set. Напишите метод
+    // hasDuplicates(List<Integer> list) — возвращает true, если в списке есть дубликаты
+
+
 }
