@@ -20,7 +20,7 @@ public class Homework {
     }
 
     // 1.2 Проверка на наличие элемента. Проверьте, содержится ли слово "java" в множестве.
-    public static boolean chekWordJava(Set<String> set) {
+    public static boolean cheсkWordJava(Set<String> set) {
         boolean chek = false;
         for (String str : set) {
             if (str.equals("java")) {
@@ -31,7 +31,7 @@ public class Homework {
     }
 
     // 1.3 Удаление элемента. Удалите слово "python" из множества (если оно есть).
-    public static boolean RemoveFromSet(Set<String> set) {
+    public static boolean removeFromSet(Set<String> set) {
         boolean isRemoved = set.remove("python");
         return isRemoved;
     }
