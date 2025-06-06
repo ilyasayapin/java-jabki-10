@@ -21,6 +21,9 @@ public class Homework {
 
     // 1.2 Проверка на наличие элемента. Проверьте, содержится ли слово "java" в множестве.
     public static boolean cheсkWordJava(Set<String> set) {
+        if (set.isEmpty()) {
+            throw new IllegalArgumentException("Ошибка. В сете нет элементов.");
+        }
         return set.contains("java");
     }
 
