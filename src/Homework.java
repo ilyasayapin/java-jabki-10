@@ -67,7 +67,10 @@ public class Homework {
     }
 
     // 2.4 Проверка наличия ключа. Проверьте, есть ли в мапе ключ "History".
-    public static boolean chekKeyHistory(Map<String, Integer> map) {
+    public static boolean cheсkKeyHistory(Map<String, Integer> map) {
+        if (map.isEmpty()) {
+            throw new IllegalArgumentException("Ошибка. В мапе нет элементов.");
+        }
         return map.containsKey("History");
     }
 
