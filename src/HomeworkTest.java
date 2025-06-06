@@ -28,16 +28,7 @@ class HomeworkTest {
 
     @Test
     void cheсkKeyHistoryIsEmpty() {
-        Map<String, Integer> map = new HashMap<>();
-        map.put("Небесная Алгебра", 5);
-        map.put("Высшая Теология", 3);
-        map.put("Молекулярная химия", 4);
-        map.put("Магическое рукоделие", 2);
-        map.put("Math", 5);
-        map.put("English", 2);
-        map.put("Physics", 4);
-        assertThrows(IllegalArgumentException.class, () -> Homework.cheсkKeyHistory(map));
-
-
+        Map<String, Integer> newMap = new HashMap<>();
+        assertThrows(IllegalArgumentException.class, () -> Homework.cheсkKeyHistory(newMap));
     }
 }
