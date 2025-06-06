@@ -13,12 +13,6 @@ class HomeworkTest {
     @Test
     void cheсkWordJavaIsEmpty() {
         Set<String> set = new HashSet<>();
-        set.add("Один");
-        set.add("Два");
-        set.add("Три");
-        set.add("java");
-        set.add("Пять");
-        set.add("Пять");
         assertThrows(IllegalArgumentException.class, () -> Homework.cheсkWordJava(set));
     }
 
