@@ -67,13 +67,5 @@ public class Main {
         System.out.println(vocabulary);
         Homework.addSynonym(vocabulary, "зеленый", "изумрудный");
         System.out.println(vocabulary);
-
-
-
-
-
-
-
-
     }
 }
